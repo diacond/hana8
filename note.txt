@@ -17,3 +17,5 @@ vscode - js로 만들었음 일렉트론?
 
 1104 화
 git checkout -b, -d, -D. .. .
+git commit -am // add commit  같이 된다
+cd - << ??
