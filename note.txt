@@ -1,0 +1,18 @@
+symbol이 뭔지?
+== << 값 비교
+=== << 메모리 사이즈까지 비교
+
+<<---1103 월--->>
+ctrl + ,
+ctrl + shift + p
+git /= linux
+setting > format on save
+setting > on focus change
+vi editer?
+vscode - js로 만들었음 일렉트론?
+! + tab
+리액트, 넥스트 - 백엔드?까지
+최초 사용자가 ws - was 써서 html 만들고 나면 그 다음부터는 ws에 있는 html 사용
+=> 넥스트 쓰는 이유 , 여기서 백까지 개발 가능 > 근데 어려움? 그래서 스프링도 해야함...
+
+1104 화

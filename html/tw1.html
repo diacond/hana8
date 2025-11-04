@@ -1,0 +1,53 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+
+      @layer base{
+        button{
+            @apply border border-green-500 bg-green-300 px-2 rounded-md
+            cursor-pointer hover:bg-green-400 hover:text-white
+            active:ring-2 active:scale-105;
+        }
+      }
+
+      @layer utility{
+        .btn{
+            background-color: skyblue;
+        }
+      }
+    </style>
+  </head>
+
+  <body class = "bg-green-100 grid place-items-center">
+    <div class = "flex flex-col md:flex-row [&>button]:shadow-md [&>button]:hover:shadow-xl border p-3 space-x-3 gap-2">
+        <button class="">Button</button>
+        <button class="btn text-white group-hover: border-black">Button2</button>
+        <button class="btn text-black">Button3</button>
+        <h1 class="text-3xl font-bold underline text-clifford animate-bounce">
+            Hello world!
+        </h1>
+        <div class = "border mx-5 my-10 pt-3 pl-3 text-red-500">Div</div>
+    </div>
+
+    <div class="group container">
+        <img src="https://unsplash.com/photos/b51xWeb75R4/download?ixid=M3wxMjA3fDB8MXxhbGx8M3x8fHx8fHx8MTc2MTg3OTc1M3w&force=true" 
+        alt="lion"
+        style="width: 50px; border: 1px solid #aaa;
+        border-radius:100%;">
+        <div>
+            <div>indiflex.corp@gmail.com</div>
+            <small>decription..111</small>
+            <small>decription..222</small>
+        </div>
+    </div>
+  </body>
+</html>
+
+<!-- [&> 이거 뭔지? -->
