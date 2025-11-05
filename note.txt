@@ -15,4 +15,54 @@ vscode - js로 만들었음 일렉트론?
 최초 사용자가 ws - was 써서 html 만들고 나면 그 다음부터는 ws에 있는 html 사용
 => 넥스트 쓰는 이유 , 여기서 백까지 개발 가능 > 근데 어려움? 그래서 스프링도 해야함...
 
-1104 화
+<--1104 화-->
+git checkout -b, -d, -D. .. .
+git commit -am // add commit  같이 된다
+cd - << ??
+
+<--1105 수-->
+working directory -add> staging area -commit> git repository
+commit 을 통하지 않아도 다른 사람이 staging area에서 볼 수 있음?
+F - a,b,c,d,e 5개의 커밋
+스쿼시하면 여러 개의 커밋이 한번에 합쳐진다.
+staging area 굳이 왜 쓰나? = add를 굳이 왜 해야하나?
+
+git init - .git 파일 생성
+vi .gitignore - 보안
+
+같은 코드를 html, was에 각각 보낸다. 근데 이렇게 하면 소스코드 무거워짐
+클라이언트 - 리액트
+|
+넥스트 : 얘가 s c 사이에 있는듯
+|
+서버
+: 리액트 + 넥스트 쓰면 편함
+
+브랜치가 머임?
+: 커밋 로그 아이디의 별명
+: 내 커밋 아디를 가져가고 싶을 때 씀. 메인에 영향 안끼치도록,
+    나중에 합치고 싶을 때 합침
+
+stash - 임시 저장
+clean - add 안해서 untracked된 애들 삭제
+: -xdn - ignore 된 파일 포함해서 모든 untracked된 애들 삭제
+: -X - ignore된 애들만! 삭제
+: -x - ignore된 애들도! 포함해서 삭제
+
+merge
+: 마지막 커밋 - head - a라는 브랜치로 땀 a에서 작업하다가 원래 head 랑 합침
+ - fast-forward
+
+: 하나의 공통 커밋 기준에서 각자 작업하고 합치면 충돌 발생
+    각각이 develop에서 작업한 내용을 공용 브랜치?에 바로 업뎃
+    리베이스를 자주함 -> 충돌 거의 안난다. 결국 공용 브랜치에 모든 내용이 갱신됨
+
+reset
+: soft - 커밋(repository)된거만 취소되고 add했던 상태로 롤백
+: mixed -
+: hard - repo에서 아예 초기화
+: merge - merge 취소
+
+revert - 기존 커밋을 남겨두고 롤백
+: push한건 revert? revert랑 reset 차이?
+: 
