@@ -56,4 +56,13 @@ merge
 : 하나의 공통 커밋 기준에서 각자 작업하고 합치면 충돌 발생
     각각이 develop에서 작업한 내용을 공용 브랜치?에 바로 업뎃
     리베이스를 자주함 -> 충돌 거의 안난다. 결국 공용 브랜치에 모든 내용이 갱신됨
+
+reset
+: soft - 커밋(repository)된거만 취소되고 add했던 상태로 롤백
+: mixed -
+: hard - repo에서 아예 초기화
+: merge - merge 취소
+
+revert - 기존 커밋을 남겨두고 롤백
+: push한건 revert? revert랑 reset 차이?
 : 
