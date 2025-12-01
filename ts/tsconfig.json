@@ -1,0 +1,44 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    // "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext", // 근데 얘가 nodenext면 밑에 moduleDetection 주석처리해도 오류안나긴함ㅋㅋ
+    "target": "esnext",
+    "types": [],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/
+
+    // Other Outputs
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": false,
+
+    // Stricter Typechecking Options
+    // "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true, // 이거 필수임...이거 false로 하면js로 해도 다 통과된다.
+    "jsx": "react-jsx", // 보통은 preserve 쓰는데, 리액트가 다 표준이 되어버린듯?
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    //"moduleDetection": "force", 얘 주석처리하면 myName 중복일때 오류난다.
+    "skipLibCheck": true
+  }
+}

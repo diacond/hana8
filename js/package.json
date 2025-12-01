@@ -1,0 +1,24 @@
+{
+  "name": "nods",
+  "version": "0.0.1",
+  "description": "hanaro 8",
+  "keywords": [
+    "javascript"
+  ],
+  "homepage": "https://github.com/diacond/hana8/nods#readme",
+  "bugs": {
+    "url": "https://github.com/diacond/hana8/nods/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diacond/hana8/nods.git"
+  },
+  "license": "MIT",
+  "author": "diacond",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js~",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
