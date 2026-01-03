@@ -1,0 +1,7 @@
+{
+	"devDependencies": {
+		"prisma": "^7.2.0",
+		"@types/node": "^25.0.3",
+		"tsx": "^4.21.0"
+	}
+}
