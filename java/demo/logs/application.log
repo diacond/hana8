@@ -1,0 +1,198 @@
+2026-02-24T10:34:01.537+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Starting DemoApplication using Java 21.0.9 with PID 17424 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24T10:34:01.539+09:00 DEBUG 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24T10:34:01.539+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-02-24T10:34:02.536+09:00  INFO 17424 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T10:34:02.537+09:00  INFO 17424 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24T10:34:02.958+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Started DemoApplication in 1.963 seconds (process running for 2.651)
+2026-02-24T10:37:20.620+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Starting DemoApplication using Java 21.0.9 with PID 17424 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24T10:37:20.620+09:00 DEBUG 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24T10:37:20.620+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-02-24T10:37:20.716+09:00  INFO 17424 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T10:37:20.716+09:00  INFO 17424 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24T10:37:20.780+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Started DemoApplication in 0.175 seconds (process running for 200.477)
+2026-02-24T10:37:24.284+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Starting DemoApplication using Java 21.0.9 with PID 17424 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24T10:37:24.284+09:00 DEBUG 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24T10:37:24.284+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-02-24T10:37:24.368+09:00  INFO 17424 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T10:37:24.368+09:00  INFO 17424 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24T10:37:24.437+09:00  INFO 17424 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Started DemoApplication in 0.169 seconds (process running for 204.13)
+2026-02-24T10:37:27.211+09:00  INFO 16088 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Starting DemoApplication using Java 21.0.9 with PID 16088 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24T10:37:27.211+09:00 DEBUG 16088 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24T10:37:27.211+09:00  INFO 16088 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-02-24T10:37:27.899+09:00  INFO 16088 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T10:37:27.899+09:00  INFO 16088 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24T10:37:28.181+09:00  INFO 16088 --- [demo] [restartedMain] com.hana8.demo.DemoApplication           : Started DemoApplication in 1.383 seconds (process running for 1.901)
+2026-02-24T10:37:43.137+09:00  INFO 16088 --- [demo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-24T10:37:43.184+09:00  INFO 16088 --- [demo] [http-nio-8080-exec-1] com.hana8.demo.DemoApplication           : INFO: name=null - code=123
+2026-02-24T10:37:43.184+09:00 DEBUG 16088 --- [demo] [http-nio-8080-exec-1] com.hana8.demo.DemoApplication           : DEBUG: This will show only if log level is DEBUG
+2026-02-24T10:37:43.184+09:00  WARN 16088 --- [demo] [http-nio-8080-exec-1] com.hana8.demo.DemoApplication           : WARN: Warning message here
+2026-02-24T10:37:43.184+09:00 ERROR 16088 --- [demo] [http-nio-8080-exec-1] com.hana8.demo.DemoApplication           : ERROR: Critical error happened!
+2026-02-24 10:40:03 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:40:03 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:40:03 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:40:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:40:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:40:05 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 1.882 seconds (process running for 2.624)
+2026-02-24 10:40:24 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-24 10:41:48 [http-nio-8080-exec-5] INFO  com.hana8.demo.DemoApplication - INFO: name=null - code=123
+2026-02-24 10:41:48 [http-nio-8080-exec-5] DEBUG com.hana8.demo.DemoApplication - DEBUG: This will show only if log level is DEBUG
+2026-02-24 10:41:48 [http-nio-8080-exec-5] WARN  com.hana8.demo.DemoApplication - WARN: Warning message here
+2026-02-24 10:41:48 [http-nio-8080-exec-5] ERROR com.hana8.demo.DemoApplication - ERROR: Critical error happened!
+2026-02-24 10:42:00 [http-nio-8080-exec-7] INFO  com.hana8.demo.DemoApplication - INFO: name=Hong - code=123
+2026-02-24 10:42:00 [http-nio-8080-exec-7] DEBUG com.hana8.demo.DemoApplication - DEBUG: This will show only if log level is DEBUG
+2026-02-24 10:42:00 [http-nio-8080-exec-7] WARN  com.hana8.demo.DemoApplication - WARN: Warning message here
+2026-02-24 10:42:00 [http-nio-8080-exec-7] ERROR com.hana8.demo.DemoApplication - ERROR: Critical error happened!
+2026-02-24 10:43:57 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:43:57 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:43:57 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:43:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:43:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:43:57 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.511 seconds (process running for 235.486)
+2026-02-24 10:43:59 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:43:59 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:43:59 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:43:59 [restartedMain] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-02-24 10:43:59 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:167) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) ~[spring-context-7.0.5.jar:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.3.jar:4.0.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.3.jar:4.0.3]
+	at com.hana8.demo.DemoApplication.main(DemoApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.3.jar:4.0.3]
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.hana8.demo.controller.HelloController] for bean with name 'helloController' defined in file [C:\mygit\hana8\java\demo\build\classes\java\main\com\hana8\demo\HelloController.class]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1571) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:686) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:655) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1699) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:632) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:604) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:598) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:216) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-web-server-4.0.3.jar:4.0.3]
+	... 11 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.hana8.demo.controller.HelloController
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:536) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:515) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.3.jar:4.0.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:536) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:515) ~[na:na]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:302) ~[spring-core-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:489) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1638) ~[spring-beans-7.0.5.jar:7.0.5]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1564) ~[spring-beans-7.0.5.jar:7.0.5]
+	... 20 common frames omitted
+2026-02-24 10:44:00 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:44:00 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:44:00 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:44:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:44:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:44:01 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.154 seconds (process running for 238.728)
+2026-02-24 10:44:02 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:44:02 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:44:02 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:44:02 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:44:02 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:44:02 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.195 seconds (process running for 240.377)
+2026-02-24 10:45:31 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:45:31 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:45:31 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:45:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:45:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:45:31 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.443 seconds (process running for 329.349)
+2026-02-24 10:45:33 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:45:33 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:45:33 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:45:33 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:45:33 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:45:33 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.186 seconds (process running for 331.513)
+2026-02-24 10:45:35 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:45:35 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:45:35 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:45:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:45:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:45:35 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.295 seconds (process running for 333.5)
+2026-02-24 10:45:37 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:45:37 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:45:37 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:45:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:45:37 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:45:37 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.144 seconds (process running for 335.106)
+2026-02-24 10:48:22 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 19640 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:48:22 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:48:22 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:48:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:48:23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:48:23 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.262 seconds (process running for 500.739)
+2026-02-24 10:48:27 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 24844 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:48:27 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:48:27 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:48:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:48:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:48:28 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 1.541 seconds (process running for 2.074)
+2026-02-24 10:48:30 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 24844 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 10:48:30 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 10:48:30 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:48:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:48:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 10:48:31 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.289 seconds (process running for 4.836)
+2026-02-24 10:48:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-24 10:48:37 [http-nio-8080-exec-1] INFO  com.hana8.demo.controller.HelloController - INFO: name=Hong - code=123
+2026-02-24 10:48:37 [http-nio-8080-exec-1] DEBUG com.hana8.demo.controller.HelloController - DEBUG: This will show only if log level is DEBUG
+2026-02-24 10:48:37 [http-nio-8080-exec-1] WARN  com.hana8.demo.controller.HelloController - WARN: Warning message here
+2026-02-24 10:48:37 [http-nio-8080-exec-1] ERROR com.hana8.demo.controller.HelloController - ERROR: Critical error happened!
+2026-02-24 11:06:16 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 24844 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 11:06:16 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 11:06:16 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 11:06:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 11:06:17 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 11:06:17 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.221 seconds (process running for 1070.938)
+2026-02-24 11:06:20 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 23692 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 11:06:20 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 11:06:20 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 11:06:20 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 11:06:20 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 11:06:21 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 1.556 seconds (process running for 2.106)
+2026-02-24 11:06:23 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 23692 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 11:06:23 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 11:06:23 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 11:06:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 11:06:23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 11:06:23 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.276 seconds (process running for 4.829)
+2026-02-24 11:07:44 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 23692 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 11:07:44 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 11:07:44 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 11:07:44 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 11:07:44 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 11:07:44 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.238 seconds (process running for 85.624)
+2026-02-24 11:07:53 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 23692 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 11:07:53 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 11:07:53 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 11:07:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 11:07:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 11:07:53 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.214 seconds (process running for 94.456)
+2026-02-24 11:07:55 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 23692 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 11:07:55 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 11:07:55 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 11:07:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 11:07:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 11:07:55 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.277 seconds (process running for 96.215)
+2026-02-24 11:08:39 [restartedMain] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 23692 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+2026-02-24 11:08:39 [restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
+2026-02-24 11:08:39 [restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 11:08:39 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 11:08:39 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-24 11:08:39 [restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 0.126 seconds (process running for 140.846)

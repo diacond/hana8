@@ -1,0 +1,16 @@
+### 1. 게시글 작성하기 (POST)
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "title": "첫 번째 게시글입니다!",
+  "content": "스프링 부트 너무 재밌네요. 하하하",
+  "author": "호랑이"
+}
+
+###
+
+### 2. 전체 게시글 조회하기 (GET)
+GET http://localhost:8080/posts
+
+###
