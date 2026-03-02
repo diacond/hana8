@@ -31,6 +31,7 @@ public class UserRepository {
 				oldUser.setUsername(user.getUsername());
 				oldUser.setEmail(user.getEmail());
 				oldUser.setTel(user.getTel());
+				oldUser.setCreditCard(user.getCreditCard());
 			}).findFirst().orElse(null);
 
 		// User oldUser = users.stream().filter(_user -> _user.getId() == user.getId()).findFirst().orElse(null);

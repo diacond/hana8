@@ -21,11 +21,13 @@ public class UserService {
 
 	public Integer registerUser(User user) {
 		user.replaceTelno();
+		user.replaceCreditCard();
 		return repository.createUser(user);
 	}
 
 	public User editUser(User user) {
 		user.replaceTelno();
+		user.replaceCreditCard();
 		return repository.updateUser(user);
 	}
 
