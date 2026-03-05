@@ -5,22 +5,22 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3308/testdb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: hana8
-    password: Hana8db!!
+    username: root
+    password: TestdbRoot
 
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
-    show-sql: true
+    #    show-sql: true
     defer-datasource-initialization: false
 
     properties:
       hibernate:
         jdbc:
-          batch_size: 50
+          batch_size: 10
           time_zone: Asia/Seoul
         order_inserts: true
         order_updates: true
@@ -30,14 +30,6 @@ spring:
   sql:
     init:
       mode: never
-
-  flyway:
-    enabled: true
-    table: flyway_schema_history_final
-    baseline-on-migrate: true
-    validate-on-migrate: false
-    out-of-order: true
-
 
   web:
     resources:

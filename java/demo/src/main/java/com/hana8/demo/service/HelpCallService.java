@@ -4,21 +4,22 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class HelpCallService implements GreetingService {
-	@Override
-	public String call() {
-		return "Help Call Service!";
-	}
 
-	@Override
-	public String sayHello() {
-		return "Help!";
-	}
+  @Override
+  public String call() {
+    return "Help Call Service!";
+  }
 
-	public void initialize() {
-		// System.out.println("HelpCall Initialization!");
-	}
+  @Override
+  public String sayHello() {
+    return "Help!";
+  }
 
-	public void destroy() {
-		// System.out.println("HelpCall Destroyment!");
-	}
+  public void initialize() {
+    // System.out.println("HelpCall Initialization!");
+  }
+
+  public void destroy() {
+    // System.out.println("HelpCall Destroyment!");
+  }
 }
