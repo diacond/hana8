@@ -10,6 +10,9 @@ public class PostListDTO {
 	@Size(min = 1, max = 100)
 	private Integer pageSize;
 
+	private String searchType;
+	private String keyword;
+
 	public PostListDTO() {
 		this.page = 1;
 		this.pageSize = 10;

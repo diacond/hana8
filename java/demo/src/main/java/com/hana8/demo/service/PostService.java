@@ -1,5 +1,9 @@
 package com.hana8.demo.service;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeParseException;
 import java.util.List;
 
 import org.springframework.data.domain.PageRequest;
@@ -9,8 +13,10 @@ import org.springframework.stereotype.Service;
 import com.hana8.demo.dto.PostDTO;
 import com.hana8.demo.dto.PostListDTO;
 import com.hana8.demo.entity.Post;
+import com.hana8.demo.entity.QPost;
 import com.hana8.demo.mapper.PostMapper;
 import com.hana8.demo.repository.PostRepository;
+import com.querydsl.core.BooleanBuilder;
 
 import lombok.RequiredArgsConstructor;
 
@@ -23,7 +29,32 @@ public class PostService {
 	public List<PostDTO> getPosts(PostListDTO dto) {
 		PageRequest pager = PageRequest.of(dto.getPage() - 1, dto.getPageSize(), Sort.by("id").descending());
 
-		List<Post> posts = repository.findAll(pager).getContent();
+		QPost qPost = QPost.post;
+		BooleanBuilder builder = new BooleanBuilder();
+
+		String searchType = dto.getSearchType();
+		String keyword = dto.getKeyword();
+
+		if (searchType != null && keyword != null && !keyword.isEmpty()) {
+			switch (searchType) {
+				case "title":
+					builder.and(qPost.title.containsIgnoreCase(keyword));
+					break;
+				case "title_body":
+					builder.and(qPost.title.containsIgnoreCase(keyword).or(qPost.body.containsIgnoreCase(keyword)));
+					break;
+				case "title_body_writer":
+					builder.and(qPost.title.containsIgnoreCase(keyword)
+						.or(qPost.body.containsIgnoreCase(keyword))
+						.or(qPost.writer.eq(keyword)));
+					break;
+				case "date":
+					builder.and(qPost.createdAt.stringValue().startsWith(keyword));
+					break;
+			}
+		}
+
+		List<Post> posts = repository.findAll(builder, pager).getContent();
 
 		return posts.stream().map(mapper::toDTO).toList();
 	}
