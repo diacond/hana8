@@ -49,4 +49,4 @@ Content-Type: application/json
 }
 
 ### post-remove
-DELETE {{baseUrl}}/104
+DELETE {{baseUrl}}/104ㄱ

@@ -6,7 +6,7 @@ import com.hana8.demo.dto.PostDTO;
 import com.hana8.demo.dto.PostRequestDTO;
 import com.hana8.demo.entity.Post;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = {ReplyMapper.class})
 public interface PostMapper {
 	// @Mapping(source = "nickname", target = "username")
 	// @Mapping(target = "passwd", ignore = true)

@@ -13,13 +13,17 @@ import com.hana8.demo.dto.PostDTO;
 import com.hana8.demo.dto.PostListDTO;
 import com.hana8.demo.dto.PostRequestDTO;
 import com.hana8.demo.dto.PostSaveDTO;
+import com.hana8.demo.dto.ReplyDTO;
 import com.hana8.demo.entity.Post;
 import com.hana8.demo.entity.PostBody;
 import com.hana8.demo.entity.QPost;
+import com.hana8.demo.entity.Reply;
 import com.hana8.demo.mapper.PostBodyMapper;
 import com.hana8.demo.mapper.PostMapper;
+import com.hana8.demo.mapper.ReplyMapper;
 import com.hana8.demo.repository.PostBodyRepository;
 import com.hana8.demo.repository.PostRepository;
+import com.hana8.demo.repository.ReplyRepository;
 import com.querydsl.core.BooleanBuilder;
 
 import lombok.RequiredArgsConstructor;
@@ -29,9 +33,11 @@ import lombok.RequiredArgsConstructor;
 public class PostService {
 	private final PostRepository repository;
 	private final PostBodyRepository bodyRepository;
+	private final ReplyRepository replyRepository;
 
 	private final PostMapper mapper;
 	private final PostBodyMapper bodyMapper;
+	private final ReplyMapper replyMapper;
 
 	public List<PostDTO> getPosts(PostListDTO dto) {
 		System.out.println("dto = " + dto);
@@ -103,4 +109,25 @@ public class PostService {
 		return repository.deletePost(id);
 	}
 
+	public ReplyDTO addReply(ReplyDTO dto) {
+		Reply reply = replyMapper.toEntity(dto);
+		return replyMapper.toDTO(replyRepository.save(reply));
+	}
+
+	public ReplyDTO editReply(ReplyDTO dto) {
+		Reply oldReply = replyRepository.findById(dto.getId())
+			.orElseThrow(() -> new IllegalArgumentException("Reply #%d is not found!".formatted(dto.getId())));
+
+		oldReply.setReply(dto.getReply());
+		oldReply.setReplier(dto.getReplier());
+
+		return replyMapper.toDTO(replyRepository.save(oldReply));
+	}
+
+	public void removeReply(Long id) {
+		replyRepository.findById(id)
+			.orElseThrow(() -> new IllegalArgumentException("Reply #%d is not found!".formatted(id)));
+
+		replyRepository.deleteById(id);
+	}
 }

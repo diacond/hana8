@@ -20,5 +20,5 @@ public class PostDTO extends PostRequestDTO {
 	private PostBodyDTO body;
 
 	@JsonManagedReference
-	private ReplyDTO reply;
+	private java.util.List<ReplyDTO> replies;
 }

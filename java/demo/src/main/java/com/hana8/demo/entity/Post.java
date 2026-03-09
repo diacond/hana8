@@ -47,7 +47,7 @@ public class Post extends BaseEntity {
 	@Column(nullable = false, length = 31)
 	private String writer;
 
-	@OneToMany(mappedBy = "post")
+	@OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<Reply> replies;
 
 	public Post(String title, String writer) {
