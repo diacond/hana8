@@ -1,29 +1,27 @@
 package com.hana8.demo.common.serializer;
 
-import tools.jackson.core.JacksonException;
-import tools.jackson.core.JsonGenerator;
-import tools.jackson.databind.SerializationContext;
-import tools.jackson.databind.ser.std.StdSerializer;
+import java.io.IOException;
 
-public class CardnoSerializer extends StdSerializer<String> {
-	protected CardnoSerializer() {
-		super(String.class);
-	}
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+
+public class CardnoSerializer extends JsonSerializer<String> {
 
 	@Override
-	public void serialize(String value, JsonGenerator gen, SerializationContext provider) throws JacksonException {
+	public void serialize(String value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
 		if (value == null) {
 			gen.writeNull();
 			return;
 		}
 
-		String replStr = value.replaceAll("[\\s-]", "");
-		int start = replStr.length() - 4 - 6;
-		String v = replStr.substring(0, start) + "*".repeat(6) + replStr.substring(start + 6);
-		gen.writeString(v.replaceAll("(.{4})(?=.)", "$1-"));
-
-		// 16 자리 고정형
-		// gen.writeString(replStr.replaceAll("(\\d{4})(\\d{4})(\\d{4})(\\d{4})", "$1-$2-$3-$4"));
+		gen.writeString(format(value.replaceAll("[\\s-]", "")));
 	}
 
+	private String format(String cardno) {
+		if (cardno.length() == 16) {
+			return cardno.replaceAll("(\\d{4})(\\d{4})(\\d{4})(\\d{4})", "$1-$2-$3-$4");
+		}
+		return cardno;
+	}
 }

@@ -1,17 +1,15 @@
 package com.hana8.demo.common.serializer;
 
-import tools.jackson.core.JacksonException;
-import tools.jackson.core.JsonGenerator;
-import tools.jackson.databind.SerializationContext;
-import tools.jackson.databind.ser.std.StdSerializer;
+import java.io.IOException;
 
-public class TelnoSerializer extends StdSerializer<String> {
-	protected TelnoSerializer() {
-		super(String.class);
-	}
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+
+public class TelnoSerializer extends JsonSerializer<String> {
 
 	@Override
-	public void serialize(String value, JsonGenerator gen, SerializationContext provider) throws JacksonException {
+	public void serialize(String value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
 		if (value == null) {
 			gen.writeNull();
 			return;
