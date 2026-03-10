@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hana8.demo.common.enums.BloodType;
 
 import jakarta.validation.constraints.Email;
@@ -44,8 +45,16 @@ public class MemberDTO {
 
 	private Boolean isActive;
 
+	@JsonIgnoreProperties("writer")
 	private List<PostDTO> posts;
+	
 	private Long replyCount;
+
+	@JsonIgnoreProperties({"captain", "deptMembers"})
+	private List<DeptDTO> depts;
+
+	@JsonIgnoreProperties({"captain", "deptMembers"})
+	private List<DeptDTO> ledDepts;
 
 	public interface OnCreate {
 	}

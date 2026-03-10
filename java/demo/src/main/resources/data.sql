@@ -3,6 +3,9 @@ truncate table User;
 truncate table Member;
 truncate table Post;
 truncate table PostBody;
+truncate table Reply;
+truncate table Dept;
+truncate table Member_Dept;
 SET FOREIGN_KEY_CHECKS = 1;
 
 SET time_zone = 'Asia/Seoul';
@@ -15,6 +18,16 @@ insert into Member (nickname, email, passwd, isActive, bloodType)
 values ('hong', 'hong@gmail.com', 'xxxx', 1, 'A'),
        ('kim', 'kim@gmail.com', null, 0, 'B'),
        ('lee', 'lee@gmail.com', null, 1, 'AB');
+
+insert into Dept (dept_name, captain_id)
+values ('개발팀', 1),
+       ('인사팀', 1);
+
+insert into Member_Dept (member_id, dept_id)
+values (1, 1),
+       (1, 2),
+       (2, 1),
+       (3, 2);
 
 insert into Post(title, writer)
 values ('Title1', 1);

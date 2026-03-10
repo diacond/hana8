@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import jakarta.validation.constraints.NotBlank;
@@ -20,13 +21,13 @@ import lombok.ToString;
 @Builder
 @ToString(callSuper = true)
 public class PostDTO {
-	@NotNull(groups = MemberDTO.OnUpdate.class, message = "수정할 멤버의 id를 입력하세요!")
+	@NotNull(groups = PostDTO.OnUpdate.class, message = "수정할 게시글의 id를 입력하세요!")
 	private Long id;
 
 	@NotBlank
 	private String title;
 
-	@NotBlank
+	@JsonIgnoreProperties({"posts", "ledDepts", "depts"})
 	private MemberDTO writer;
 
 	private LocalDateTime createdAt;
