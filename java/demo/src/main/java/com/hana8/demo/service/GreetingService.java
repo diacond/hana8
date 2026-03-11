@@ -1,11 +1,7 @@
 package com.hana8.demo.service;
 
-public class GreetingService {
+public interface GreetingService {
+	public String call();
 
-  private HelloService service;
-
-  public String call() {
-    return service.sayHello();
-  }
-
+	public String sayHello();
 }

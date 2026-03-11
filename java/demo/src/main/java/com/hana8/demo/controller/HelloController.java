@@ -1,35 +1,53 @@
 package com.hana8.demo.controller;
 
-// 1. 반드시 org.slf4j 패키지의 Logger를 사용해야 합니다.
-
-import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
 public class HelloController {
-//  // 2. LoggerFactory와 일치하는 SLF4J Logger 인터페이스를 사용합니다.
-//  private static final Logger log = LoggerFactory.getLogger(DemoApplication.class);
+	// private static final Logger log = LoggerFactory.getLogger(HelloController.class);
 
-  @RequestMapping("/")
-  public String index() {
-    return "Hana8 Demo kk";
-  }
+	@RequestMapping("/")
+	public String index(@RequestHeader("User-Agent") String userAgent,
+		@CookieValue(value = "token", required = false) String token) {
+		return """
+			Hana8 Springboot Demo!
+			token: %s,
+			User-Agent: %s
+			""".formatted(token, userAgent);
+	}
 
-  @GetMapping("/hello")
-  public String hello() {
-    return "Hello, world!";
-  }
+	@GetMapping("/set-cookie")
+	public String setCookie(HttpServletResponse res) {
+		Cookie cookie = new Cookie("token", "HANA");
+		cookie.setHttpOnly(true);   // JS에서 접근 못하게
+		cookie.setSecure(true);     // HTTPS에서만 전송
+		cookie.setPath("/");        // 모든 경로에서 사용
+		cookie.setMaxAge(60 * 60);  // 만료(초단위, 1시간)
 
-  @GetMapping("/hello-servlet")
-  public String helloServlet(String name) {
-    // 3. 로그 작성 시 중괄호 {} 를 사용하여 성능과 가독성을 챙깁니다.
-    log.info("INFO: name={} - code={}", name, 123);
-    log.debug("DEBUG: ");
-    log.warn("WARN: warning");
-    log.error("ERROR: Critical error happened!");
-    return "Hello, " + name + "!!!";
-  }
+		res.addCookie(cookie);
+		return "ok";
+	}
+
+	@GetMapping("/hello")
+	public String hello() {
+		return "Hello, World!";
+	}
+
+	@GetMapping("/hello-servlet")
+	public String helloServlet(String name) {
+		log.info("INFO: {} - {}", name, 123);
+		log.debug("DEBUG: ");
+		log.warn("WARN: warn");
+		log.error("ERROR!!");
+		return "Hello~ " + name + "!!";
+	}
 }

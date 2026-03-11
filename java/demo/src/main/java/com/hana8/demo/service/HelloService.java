@@ -2,14 +2,9 @@ package com.hana8.demo.service;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("hello-service")
 public class HelloService {
-
-  public String hello() {
-    return "Good Morning";
-  }
-
-  public String sayHello() {
-    return "Hello Service";
-  }
+	public String sayHello() {
+		return "Good Morning!";
+	}
 }
