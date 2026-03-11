@@ -39,6 +39,9 @@ dependencies {
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.1'
 
 
+//    thumbnail
+    implementation 'net.coobird:thumbnailator:0.4.21'
+
 //    QueryDSL
     implementation 'com.querydsl:querydsl-jpa::jakarta'
     annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
@@ -54,6 +57,9 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.6.3'
     implementation 'org.springframework.boot:spring-boot-starter-json';
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'
+
+//    swagger
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.1'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.boot:spring-boot-webmvc-test'

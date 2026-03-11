@@ -40,10 +40,19 @@ spring:
     resources:
       add-mappings: false
 
-#  // application.yml
+  servlet:
+    multipart:
+      location: src/main/resources/static/tmp
+      max-request-size: 10MB
+      max-file-size: 2MB
+
+upload:
+  path: src/main/resources/static/upload
+  secure: src/main/upload/secure
+
 springdoc:
   swagger-ui:
-    enabled: true # 보안 문제 생기면 여기 닫으면 된다.
+    enabled: true
     path: /swagger.html
   api-docs:
     enabled: true
