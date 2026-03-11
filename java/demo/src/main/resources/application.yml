@@ -40,6 +40,17 @@ spring:
     resources:
       add-mappings: false
 
+  servlet:
+    multipart:
+      location: src/main/resources/static/tmp
+      max-request-size: 10MB
+      max-file-size: 900KB
+
+upload:
+  path: src/main/resources/static/upload
+  
+
+
 springdoc:
   swagger-ui:
     enabled: true
