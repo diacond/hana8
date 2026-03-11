@@ -1,9 +1,9 @@
 package com.hana8.demo.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
-
-import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,15 +14,18 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DeptDTO {
-	private Integer id;
 
-	@NotBlank
-	private String name;
+  private Integer id;
 
-	private MemberDTO captain;
+  @NotBlank
+  @Schema(description = "부서명", example = "Sales")
+  private String name;
 
-	@Builder.Default
-	private List<MemberDTO> deptMembers = new ArrayList<>();
+  @Schema(description = "부서명", example = "{id:1}")
+  private MemberDTO captain;
 
-	private Integer memberCount;
+  @Builder.Default
+  private List<MemberDTO> deptMembers = new ArrayList<>();
+
+  private Integer memberCount;
 }

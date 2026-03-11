@@ -39,3 +39,12 @@ spring:
   web:
     resources:
       add-mappings: false
+
+#  // application.yml
+springdoc:
+  swagger-ui:
+    enabled: true # 보안 문제 생기면 여기 닫으면 된다.
+    path: /swagger.html
+  api-docs:
+    enabled: true
+    path: /hana8/api-docs
