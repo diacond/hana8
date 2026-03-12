@@ -1,0 +1,11 @@
+@baseUrl=http://localhost:8080/api/public
+
+### lang list
+GET {{baseUrl}}/langs
+#Accept-Language: ko 이거 쓰면 안된다??
+
+
+### set lang
+POST {{baseUrl}}/setlang
+Content-Type: application/json
+Accept-Language: en

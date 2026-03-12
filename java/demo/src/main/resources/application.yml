@@ -1,6 +1,26 @@
+management:
+  server:
+    port: 9001
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: env,beans
+  endpoint:
+    metrics:
+      access: read_only
+    shutdown:
+      access: unrestricted
+    health:
+      show-details: always
+
 spring:
   application:
     name: demo
+
+  config:
+    import: classpath:security.yml
+    datasource:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
