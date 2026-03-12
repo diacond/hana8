@@ -12,6 +12,8 @@ public class WebConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        // 소스 폴더(src) 내부의 파일을 실시간으로 읽어오기 위한 설정
+        // uploadPath가 "src/main/resources/static/upload"일 때, 앞에 "file:"을 붙여 실제 파일 시스템을 찌름
 		registry.addResourceHandler("/upload/**")
 			.addResourceLocations("file:" + uploadPath + "/");
 	}

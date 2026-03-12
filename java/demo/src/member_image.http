@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:8080/api
+
+### 1. 멤버 이미지 조회
+GET {{baseUrl}}/members/1/images
+
+### 2. 멤버 이미지 업로드
+POST {{baseUrl}}/members/1/images
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="test_profile.png"
+Content-Type: image/png
+
+< C:\Users\tiger\Pictures\2020_sunung.PNG
+--WebAppBoundary--
+
+### 3. 멤버 상세 조회 (이미지 포함 확인)
+GET {{baseUrl}}/members/1
+
+### 4. 멤버 이미지 삭제
+# 이미지 ID는 위 조회 결과에서 확인 후 수정 필요
+DELETE {{baseUrl}}/members/1/images/6

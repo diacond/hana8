@@ -41,7 +41,7 @@ import lombok.ToString;
 public class Dept extends BaseEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(columnDefinition = "smallint unsigned")
+	@Column(name = "id", columnDefinition = "smallint unsigned")
 	private Integer id;
 
 	@Column(nullable = false, length = 30)

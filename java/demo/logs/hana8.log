@@ -165,3 +165,74 @@
 [2026-02-24 18:20:11:807][restartedMain] DEBUG com.hana8.demo.DemoApplication - Running with Spring Boot v4.0.3, Spring v7.0.5
 [2026-02-24 18:20:11:807][restartedMain] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
 [2026-02-24 18:20:13:2443][restartedMain] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 2.231 seconds (process running for 3.013)
+[2026-03-12 09:44:28:848][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 32072 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 09:44:28:848][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 32072 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 09:44:28:850][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 09:44:28:850][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 09:47:38:653][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 38836 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 09:47:38:653][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 38836 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 09:47:38:653][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 09:47:38:653][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 09:47:58:830][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 7012 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 09:47:58:830][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 7012 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 09:47:58:833][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 09:47:58:833][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 09:56:50:730][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 45360 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 09:56:50:730][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 45360 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 09:56:50:732][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 09:56:50:732][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:00:19:1798][Test worker] INFO  c.h.d.r.MemberImageCheckTest - Starting MemberImageCheckTest using Java 21.0.9 with PID 45260 (started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:00:19:1801][Test worker] DEBUG c.h.d.r.MemberImageCheckTest - Running with Spring Boot v4.0.3, Spring v7.0.5
+[2026-03-12 10:00:19:1803][Test worker] INFO  c.h.d.r.MemberImageCheckTest - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:01:45:2083][Test worker] INFO  c.h.d.r.MemberImageCheckTest - Starting MemberImageCheckTest using Java 21.0.9 with PID 27888 (started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:01:45:2085][Test worker] DEBUG c.h.d.r.MemberImageCheckTest - Running with Spring Boot v4.0.3, Spring v7.0.5
+[2026-03-12 10:01:45:2087][Test worker] INFO  c.h.d.r.MemberImageCheckTest - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:02:14:2032][Test worker] INFO  c.h.d.r.MemberImageCheckTest - Starting MemberImageCheckTest using Java 21.0.9 with PID 8960 (started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:02:14:2035][Test worker] DEBUG c.h.d.r.MemberImageCheckTest - Running with Spring Boot v4.0.3, Spring v7.0.5
+[2026-03-12 10:02:14:2037][Test worker] INFO  c.h.d.r.MemberImageCheckTest - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:04:11:2082][Test worker] INFO  c.h.d.r.MemberImageCheckTest - Starting MemberImageCheckTest using Java 21.0.9 with PID 6396 (started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:04:11:2085][Test worker] DEBUG c.h.d.r.MemberImageCheckTest - Running with Spring Boot v4.0.3, Spring v7.0.5
+[2026-03-12 10:04:11:2085][Test worker] INFO  c.h.d.r.MemberImageCheckTest - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:04:24:15582][Test worker] INFO  c.h.d.r.MemberImageCheckTest - Started MemberImageCheckTest in 14.517 seconds (process running for 18.246)
+[2026-03-12 10:08:58:867][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 22276 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:08:58:867][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 22276 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:08:58:871][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:08:58:871][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:09:04:6752][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.505 seconds (process running for 7.235)
+[2026-03-12 10:09:04:6752][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.505 seconds (process running for 7.235)
+[2026-03-12 10:20:57:1120][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 24508 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:20:57:1120][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 24508 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:20:57:1125][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:20:57:1125][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:21:03:6847][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.62 seconds (process running for 7.424)
+[2026-03-12 10:21:03:6847][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.62 seconds (process running for 7.424)
+[2026-03-12 10:30:26:912][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 46604 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:30:26:912][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 46604 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:30:26:919][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:30:26:919][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:30:32:6615][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.292 seconds (process running for 7.136)
+[2026-03-12 10:30:32:6615][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.292 seconds (process running for 7.136)
+[2026-03-12 10:38:22:848][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 25064 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:38:22:848][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 25064 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:38:22:851][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:38:22:851][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:38:27:6629][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.372 seconds (process running for 7.026)
+[2026-03-12 10:38:27:6629][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.372 seconds (process running for 7.026)
+[2026-03-12 10:39:37:681][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 23224 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:39:37:681][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 23224 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:39:37:683][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:39:37:683][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:39:43:6453][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.287 seconds (process running for 6.839)
+[2026-03-12 10:39:43:6453][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.287 seconds (process running for 6.839)
+[2026-03-12 10:47:15:1091][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 44780 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:47:15:1091][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 44780 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 10:47:15:1097][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:47:15:1097][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 10:47:25:10862][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 10.558 seconds (process running for 11.431)
+[2026-03-12 10:47:25:10862][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 10.558 seconds (process running for 11.431)
+[2026-03-12 11:03:03:705][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 21536 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 11:03:03:705][main] INFO  com.hana8.demo.DemoApplication - Starting DemoApplication using Java 21.0.9 with PID 21536 (C:\mygit\hana8\java\demo\build\classes\java\main started by tiger in C:\mygit\hana8\java\demo)
+[2026-03-12 11:03:03:711][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 11:03:03:711][main] INFO  com.hana8.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+[2026-03-12 11:03:08:6203][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.004 seconds (process running for 7.573)
+[2026-03-12 11:03:08:6203][main] INFO  com.hana8.demo.DemoApplication - Started DemoApplication in 6.004 seconds (process running for 7.573)

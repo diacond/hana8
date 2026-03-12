@@ -8,7 +8,7 @@ import org.mapstruct.Mapping;
 import com.hana8.demo.dto.MemberDTO;
 import com.hana8.demo.entity.Member;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = {MemberImageMapper.class})
 public interface MemberMapper {
 	@Mapping(target = "passwd", ignore = true)
 	@Mapping(target = "posts", ignore = true)
@@ -17,6 +17,7 @@ public interface MemberMapper {
 	@Mapping(target = "depts", ignore = true)
 	MemberDTO toDTO(Member member);
 
+	@Mapping(target = "images", ignore = true)
 	Member toEntity(MemberDTO dto);
 
 	List<MemberDTO> toDTOList(List<Member> members);

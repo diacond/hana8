@@ -53,6 +53,9 @@ public class MemberDTO {
 	@Builder.Default
 	private List<DeptDTO> depts = new ArrayList<>();
 
+	@Builder.Default
+	private List<MemberImageDTO> images = new ArrayList<>();
+
 	public interface OnCreate {
 	}
 

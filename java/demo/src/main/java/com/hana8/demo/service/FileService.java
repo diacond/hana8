@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.NoSuchElementException;
 import java.util.UUID;
 
@@ -28,10 +30,18 @@ public class FileService {
 	private String securePath;
 
 	public String upload(MultipartFile file) {
-		return upload(file, false);
+		return upload(file, getTodayPath(), false);
 	}
 
 	public String upload(MultipartFile file, boolean isSecure) {
+		return upload(file, getTodayPath(), isSecure);
+	}
+
+    public String getTodayPath() {
+        return LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
+    }
+
+	public String upload(MultipartFile file, String subPath, boolean isSecure) {
 		if (file.isEmpty() || file.getOriginalFilename() == null)
 			throw new IllegalArgumentException("파일이 비어있습니다.");
 
@@ -44,20 +54,21 @@ public class FileService {
 
 		// UUID로 파일명 중복 방지
 		String savedFilename = UUID.randomUUID() + ext;
-		// String savedFilename = UUID.randomUUID() + "_" + originalFilename;
 
-		// 저장 경로
-		Path savePath = Paths.get(isSecure ? securePath : uploadPath, savedFilename);
-		Path thumbPath = Paths.get(isSecure ? securePath : uploadPath, "thumb_" + savedFilename);
+		// 저장 경로를 절대 경로로 처리
+		Path rootPath = Paths.get(isSecure ? securePath : uploadPath).toAbsolutePath();
+		Path targetDir = rootPath.resolve(subPath);
+		Path savePath = targetDir.resolve(savedFilename);
+		Path thumbPath = targetDir.resolve("thumb_" + savedFilename);
+		
 		try {
 			// 디렉토리 없으면 생성
-			Files.createDirectories(savePath.getParent());
+			Files.createDirectories(targetDir);
 
 			// 파일 저장
 			file.transferTo(savePath);
 
 			String contentType = file.getContentType();
-			System.out.println("contentType = " + contentType);
 			if (contentType != null && contentType.startsWith(("image/"))) {
 				Thumbnails.of(savePath.toFile())
 					.size(200, 200)
@@ -72,7 +83,8 @@ public class FileService {
 	}
 
 	public ResponseEntity<Resource> download(String filename, boolean inline, boolean isSecure) {
-		Path filePath = Paths.get(isSecure ? securePath : uploadPath, filename);
+		Path rootPath = Paths.get(isSecure ? securePath : uploadPath).toAbsolutePath();
+		Path filePath = rootPath.resolve(filename).normalize();
 		Resource resource = new FileSystemResource(filePath);
 
 		if (!resource.exists())
@@ -84,7 +96,7 @@ public class FileService {
 			contentType = Files.probeContentType(filePath);
 		} catch (IOException e) {
 			contentType = "application/octet-stream";
-		}  // 모르면 기본값
+		}
 
 		String disposition = (inline ? "inline" : "attachment") + "; filename=\"" + filename + "\"";
 		return ResponseEntity.ok()
@@ -92,4 +104,24 @@ public class FileService {
 			.header(HttpHeaders.CONTENT_DISPOSITION, disposition)
 			.body(resource);
 	}
+
+    public void deleteFile(String relativePath, boolean isSecure) {
+        // 절대 경로로 변환하여 정확한 위치 파악
+        Path rootPath = Paths.get(isSecure ? securePath : uploadPath).toAbsolutePath();
+        Path filePath = rootPath.resolve(relativePath).normalize();
+        
+        try {
+            // 원본 파일 삭제
+            boolean deleted = Files.deleteIfExists(filePath);
+            
+            // 썸네일 파일 삭제 (파일명 앞에 thumb_ 붙임)
+            Path thumbPath = filePath.getParent().resolve("thumb_" + filePath.getFileName());
+            Files.deleteIfExists(thumbPath);
+            
+            System.out.println("파일 삭제 시도: " + filePath + " (결과: " + deleted + ")");
+        } catch (IOException e) {
+            // 삭제 에러 발생 시 로그 출력 (윈도우에서 파일 잠금 등)
+            System.err.println("파일 삭제 실패: " + e.getMessage());
+        }
+    }
 }

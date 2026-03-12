@@ -6,11 +6,6 @@ import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
-import com.hana8.demo.post.PostRepositoryImpl;
-import com.hana8.demo.post.PostRepositoryListImpl;
-import com.hana8.demo.post.PostServiceImpl;
-import com.hana8.demo.post.PostsRepository;
-import com.hana8.demo.post.PostsService;
 import com.hana8.demo.service.HelpCallService;
 
 @Configuration
@@ -25,6 +20,7 @@ public class SpringConfig {
 		return new HelpCallService();
 	}
 
+    /*
 	@Bean
 	public PostsRepository postsRepository() {
 		return new PostRepositoryImpl();
@@ -39,4 +35,5 @@ public class SpringConfig {
 	public PostsService postsService() {
 		return new PostServiceImpl(postsRepository(), postsRepositoryList());
 	}
+    */
 }

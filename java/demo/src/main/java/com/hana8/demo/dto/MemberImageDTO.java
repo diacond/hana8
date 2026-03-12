@@ -10,16 +10,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MemberImageDTO {
-	private Long id;
-	private String orgname;
-	private String savename;
-	private String savedir;
 
-	public String getImageUrl() {
-		return savedir + "/" + savename;
-	}
+  private Long id;
+  private String orgname;
+  private String savename;
+  private String savedir;
 
-	public String getThumbnailUrl() {
-		return savedir + "/thumb_" + savename;
-	}
+  public String getImageUrl() {
+    return savedir + "/" + savename;
+  }
+
+  public String getThumbnailUrl() {
+    return savedir + "/thumb_" + savename;
+  }
 }
