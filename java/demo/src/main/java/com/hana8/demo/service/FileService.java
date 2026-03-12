@@ -32,6 +32,14 @@ public class FileService {
 	}
 
 	public String upload(MultipartFile file, boolean isSecure) {
+		return upload(file, isSecure, "");
+	}
+
+	public String upload(MultipartFile file, String saveDir) {
+		return upload(file, false, saveDir);
+	}
+
+	public String upload(MultipartFile file, boolean isSecure, String saveDir) {
 		if (file.isEmpty() || file.getOriginalFilename() == null)
 			throw new IllegalArgumentException("파일이 비어있습니다.");
 
@@ -46,9 +54,10 @@ public class FileService {
 		String savedFilename = UUID.randomUUID() + ext;
 		// String savedFilename = UUID.randomUUID() + "_" + originalFilename;
 
-		// 저장 경로
-		Path savePath = Paths.get(isSecure ? securePath : uploadPath, savedFilename);
-		Path thumbPath = Paths.get(isSecure ? securePath : uploadPath, "thumb_" + savedFilename);
+		// 저장 경로         (/upload/xxx, ../2026/03/12, aaa.png) ==> /upload/2026/03/12/aaa.png)
+		Path savePath = Paths.get(isSecure ? securePath : uploadPath, saveDir, savedFilename).normalize();
+		Path thumbPath = Paths.get(isSecure ? securePath : uploadPath, saveDir, "thumb_" + savedFilename).normalize();
+
 		try {
 			// 디렉토리 없으면 생성
 			Files.createDirectories(savePath.getParent());
@@ -94,8 +103,12 @@ public class FileService {
 	}
 
 	public void delete(String filename) {
+		delete(filename, "");
+	}
+
+	public void delete(String filename, String saveDir) {
 		// /upload/../../../../usr/local/ls ==> normalize ⇒ /usr/local/ls
-		Path filePath = Paths.get(uploadPath, filename).normalize();
+		Path filePath = Paths.get(uploadPath, saveDir, filename).normalize();
 
 		if (!Files.exists(filePath))
 			throw new NoSuchElementException("파일을 찾을 수 없습니다: " + filename);
@@ -108,7 +121,7 @@ public class FileService {
 			Files.delete(filePath);
 
 			// 썸네일도 삭제
-			Path thumbPath = Paths.get(uploadPath, "thumb_" + filename);
+			Path thumbPath = Paths.get(uploadPath, saveDir, "thumb_" + filename);
 			if (Files.exists(thumbPath))
 				Files.delete(thumbPath);
 
