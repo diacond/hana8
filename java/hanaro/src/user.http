@@ -1,0 +1,19 @@
+### 일반 사용자 회원가입 & 자유입출금 통장 개설
+POST http://localhost:8080/api/users/signup
+Content-Type: application/jsonuse
+
+{
+  "email": "tiger@naver.com",
+  "password": "12345678",
+  "nickname": "신호림1",
+  "accountNumber": "01029989641"
+}
+
+### 유효성 검사 에러 테스트 (계좌번호 형식 틀림)
+POST http://localhost:8080/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "kim@naver.com",
+  "password": "12345678"
+}

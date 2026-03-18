@@ -1,0 +1,3 @@
+### [Admin] 1번 유저의 전체 가입 내역 조회
+GET http://localhost:8080/api/admin/users/1/histories
+Accept: application/json

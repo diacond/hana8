@@ -1,0 +1,56 @@
+### [STEP 1] 일반 사용자 가입 (최초 1회만)
+POST http://localhost:8080/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "user1@test.com",
+  "password": "password123",
+  "nickname": "손님1",
+  "accountNumber": "11122233344"
+}
+
+
+### [STEP 2] 관리자 계정 가입 (최초 1회만)
+POST http://localhost:8080/api/users/admin/signup
+Content-Type: application/json
+
+{
+  "email": "admin1@test.com",
+  "password": "adminpassword",
+  "nickname": "관리자1",
+  "accountNumber": "99988877766"
+}
+
+
+### [STEP 3-1] 일반 사용자로 로그인 (토큰 획득)
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+
+{
+  "email": "user1@test.com",
+  "password": "password123"
+}
+
+> {% client.global.set("user_token", response.body.token); %}
+
+
+### [STEP 3-2] 관리자로 로그인 (토큰 획득)
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+
+{
+  "email": "admin1@test.com",
+  "password": "adminpassword"
+}
+
+> {% client.global.set("admin_token", response.body.token); %}
+
+
+### [STEP 4] 일반 사용자 기능 테스트 (자산 조회)
+GET http://localhost:8080/api/accounts/my?userId=3
+Authorization: Bearer {{user_token}}
+
+
+### [STEP 5] 관리자 전용 기능 테스트 (닉네임 검색)
+GET http://localhost:8080/api/admin/users/search?nickname=손님1
+Authorization: Bearer {{admin_token}}

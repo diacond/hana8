@@ -1,0 +1,26 @@
+spring:
+  # security.yml
+  config:
+    import: classpath:security.yml
+
+  # MySQL8, Docker
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/hanarodb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: hanaro
+    password: 12345678
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    # Hibernate가 테이블을 다 만든 후 data.sql을 실행하도록 지연 설정
+    defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      # 외부 DB(MySQL)에서도 data.sql을 실행하도록 설정
+      mode: always

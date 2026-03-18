@@ -1,0 +1,2 @@
+### 내 가입 내역(자유입출금 + 예적금) 전체 보기 (1번 유저)
+GET http://localhost:8080/api/accounts/my?userId=1

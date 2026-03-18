@@ -1,0 +1,9 @@
+# security.yml
+security:
+  admin:
+    id: hanaro
+    password: 12345678
+  jwt:
+    # JWT 서명에 사용할 임의의 시크릿 키 (실제 개발 시에는 긴 문자열 사용)
+    secret-key: hanaro_digital_hana_financial_service_developer_bootcamp_secret_key_string
+    expiration: 3600000 # 1시간 (밀리초)

@@ -1,0 +1,29 @@
+### [ADMIN STEP 1] 관리자 계정 가입 (이미 했으면 생략 가능)
+POST http://localhost:8080/api/users/admin/signup
+Content-Type: application/json
+
+{
+  "email": "admin1@test.com",
+  "password": "adminpassword",
+  "nickname": "관리자1",
+  "accountNumber": "99988877766"
+}
+
+
+### [ADMIN STEP 2] 관리자 로그인 (토큰 얻기)
+# ★ 5번 기능을 위해 반드시 이 화살표를 클릭하세요!
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+
+{
+  "email": "admin1@test.com",
+  "password": "adminpassword"
+}
+
+> {% client.global.set("admin_token", response.body.token); %}
+
+
+### [ADMIN STEP 3] 닉네임으로 회원 가입 내역 검색
+# ★ 위 2번을 누른 후에 실행하세요!
+GET http://localhost:8080/api/admin/users/search?nickname=신호림
+Authorization: Bearer {{admin_token}}

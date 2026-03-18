@@ -1,0 +1,7 @@
+### 사용자의 예적금 상품 가입 (1번 유저가 1번 상품에 가입)
+POST http://localhost:8080/api/history/subscribe/1?userId=1
+Content-Type: application/json
+
+{
+  "accountNumber": "222-2222-2222"
+}
